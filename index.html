@@ -44,35 +44,15 @@
 			console.log(topValue)
 
 			if (e.keyCode == 37) { // LEFT
-				if (character.style.backgroundImage == 'url("img/left1.png")'){
-					character.style.backgroundImage = "url('img/left2.png')";
-				}else{
-					character.style.backgroundImage = "url('img/left1.png')"
-				}
 				if (leftValue >= 10) { leftValue = leftValue - 10; }
 			}
 			else if (e.keyCode == 39) { // RIGHT
-				if (character.style.backgroundImage == 'url("img/right1.png")'){
-					character.style.backgroundImage = "url('img/right2.png')";
-				}else{
-					character.style.backgroundImage = "url('img/right1.png')"
-				}
 				if (leftValue <= 480) { leftValue = leftValue + 10; }
 			}
 			else if (e.keyCode == 40) { // DOWN
-				if (character.style.backgroundImage == 'url("img/down1.png")'){
-					character.style.backgroundImage = "url('img/down2.png')";
-				}else{
-					character.style.backgroundImage = "url('img/down1.png')"
-				}
 				if (topValue <= 460) { topValue = topValue + 10; }
 			}
 			else if (e.keyCode == 38) { // TOP
-				if (character.style.backgroundImage == 'url("img/top1.png")'){
-					character.style.backgroundImage = "url('img/top2.png')";
-				}else{
-					character.style.backgroundImage = "url('img/top1.png')"
-				}
 				if (topValue >= 10) { topValue -= 10; }
 			}
 			// ...
